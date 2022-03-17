@@ -25,5 +25,10 @@ export default [
 		path: '/login',
 		name: 'login',
 		component: () => import("../views/login/index.vue"),
+	},
+	{
+		path: '/403',
+		name: '403',
+		component: () => import("../views/error/403.vue"),
 	}
 ]

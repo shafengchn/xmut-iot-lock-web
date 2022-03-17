@@ -23,7 +23,7 @@ Promise.prototype.finally = function (callback) {
  */
 Promise.prototype.before = function (callback) {
     'use strict';
-    let P = this.constructor;
+    // let P = this.constructor;
     return this.then(
         value => {
             callback();
