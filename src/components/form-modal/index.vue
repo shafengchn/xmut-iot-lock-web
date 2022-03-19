@@ -51,12 +51,13 @@ export default {
         },
         saveClick(e) {
             this.saving = true;
+            // closeModal是否继续显示Modal框
             let done = closeModal => {
                 this.saving = false;
                 if(this.saveProgress !== '') {
                     this.$emit('update:saveProgress', '');
                 }
-                if(!closeModal) {
+                if(closeModal !== false) {
                     this.$emit('input', false);
                 }
             }

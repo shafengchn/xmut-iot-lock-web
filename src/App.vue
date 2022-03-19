@@ -16,6 +16,7 @@
 	margin-top: 10px;
 }
 
+// iview drawer 底部栏样式
 .drawer-footer{
     width: 100%;
     position: absolute;
@@ -27,9 +28,15 @@
     background: #fff;
 }
 
+// iview 页码组件居中
 .page-center {
     display: flex;
     justify-content: center;
     margin: 10px 0 0 0;
+}
+
+// iview 嵌套表格样式
+.inner-table /deep/ .ivu-table-expanded-cell {
+    padding: 20px 20px;
 }
 </style>

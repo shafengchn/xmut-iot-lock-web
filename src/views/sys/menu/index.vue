@@ -33,6 +33,9 @@
                 <FormItem label="是否显示到侧边栏" prop="isShow">
                     <iSwitch v-model="formItem.isShow" />
                 </FormItem>
+                <FormItem label="排序" prop="sort">
+                    <InputNumber v-model="formItem.sort" :max="2147483647" :min="-2147483648" />
+                </FormItem>
             </Form>
         </FormModal>
     </Card>
@@ -138,7 +141,9 @@ export default {
                         console.error(err);
                         done(false);
                     })
-                }
+                } else {
+					done(false);
+				}
             })
         },
         editClick() {

@@ -129,7 +129,9 @@ export default {
                         done(false);
                         console.error(err);
                     })
-                }
+                } else {
+					done(false);
+				}
             });
             
         },

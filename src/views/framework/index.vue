@@ -8,7 +8,7 @@
                             <Submenu :name="item.id" :key="index" :class="{ 'hide-submenu-arrow': isCollapsed }">
                                 <div slot="title">
                                     <Icon :type="item.menuIcon" />
-                                    <span>{{item.menuTitle}}</span>
+                                    <span>&nbsp;{{item.menuTitle}}</span>
                                 </div>
                                 <template v-for="(item2, index2) in item.children">
                                     <MenuItem :name="item2.id" :to="item2.routeName" :key="index2" :class="{ 'submenu-collapsed': isCollapsed }">
